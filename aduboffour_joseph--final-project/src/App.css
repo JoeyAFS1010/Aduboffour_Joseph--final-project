@@ -1,4 +1,6 @@
 /* CSS FOR HOMEPAGE*/
+
+
 .homepage_header
 {
     background-color:black;
@@ -78,6 +80,7 @@
     background-repeat: no-repeat;
     height: 100%;
     position: relative;
+    border: solid thick black;
 }
 
 .homepage_bodyhdr

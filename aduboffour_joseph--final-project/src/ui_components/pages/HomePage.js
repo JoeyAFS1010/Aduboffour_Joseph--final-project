@@ -1,3 +1,7 @@
+import { Link } from 'react-router-dom'
+
+
+
 function HomePage (){
     return (
     <div  class="homepage_bodybckg">
@@ -8,10 +12,10 @@ function HomePage (){
                     <a href="homepage.html" class="homepage_headerlogo">JOEYZ<span style={{color:'rgb(92, 222, 240)'}}>WORLD.</span></a>
                     <nav>
                         <ul class="homepage_headerNav">
-                            <li class="homepage_headerNavli"><a class = "homepage_headerNavlink" href="contactPage.html">CONNECT</a></li>
-                            <li class="homepage_headerNavli"><a class = "homepage_headerNavlink" href="resumePage.html">SKILLS</a></li>
-                            <li class="homepage_headerNavli"><a class = "homepage_headerNavlink" href="portfolioPage.html">PORTFOLIO</a></li>
-                            <li class="homepage_headerNavli"><a class = "homepage_headerNavlink" href="homepage.html">HOME</a></li>
+                            <li class="homepage_headerNavli"><Link class = "homepage_headerNavlink" to="ContactPage.js">CONNECT</Link></li>
+                            <li class="homepage_headerNavli"><a class = "homepage_headerNavlink" href="Resume.js">SKILLS</a></li>
+                            <li class="homepage_headerNavli"><a class = "homepage_headerNavlink" href="Portfolio.js">PORTFOLIO</a></li>
+                            <li class="homepage_headerNavli"><a class = "homepage_headerNavlink" href="Homepage.js">HOME</a></li>
                         </ul>
                     </nav>
                 </header>
