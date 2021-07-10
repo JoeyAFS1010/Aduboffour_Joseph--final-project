@@ -14,9 +14,9 @@ function App() {
    <BrowserRouter>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/portfolio" component={Portfolio} />
-          <Route exact path="/resume" component={Resume} />
-          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/Portfolio" component={Portfolio} />
+          <Route exact path="/Resume" component={Resume} />
+          <Route exact path="/ContactPage" component={Contact} />
           <Route exact path="/login" component={Login} />
           <PrivateRoute path="/submissions_path">
             <Submissions/>

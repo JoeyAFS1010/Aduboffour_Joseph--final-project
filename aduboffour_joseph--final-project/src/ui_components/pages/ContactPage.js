@@ -1,3 +1,5 @@
+
+
 function ContactPage (){
     return (
          <div>
@@ -9,11 +11,11 @@ function ContactPage (){
                 <header class="homepage_header">
                     <a href="homepage.html" class="homepage_headerlogo">JOEYZ<span style={{color:'rgb(92, 222, 240)'}}>WORLD.</span></a>
                     <nav>
-                        <ul class="homepage_headerNav">
-                            <li class="homepage_headerNavli"><a class = "homepage_headerNavlink" href="contactPage.html">CONNECT</a></li>
-                            <li class="homepage_headerNavli"><a class = "homepage_headerNavlink" href="resumePage.html">SKILLS</a></li>
-                            <li class="homepage_headerNavli"><a class = "homepage_headerNavlink" href="portfolioPage.html">PORTFOLIO</a></li>
-                            <li class="homepage_headerNavli"><a class = "homepage_headerNavlink" href="homepage.html">HOME</a></li>
+                    <ul class="homepage_headerNav">
+                            <li class="homepage_headerNavli"><a className= "homepage_headerNavlink" href="/ContactPage">CONNECT</a></li>
+                            <li class="homepage_headerNavli"><a className = "homepage_headerNavlink" href="/Resume">SKILLS</a></li>
+                            <li class="homepage_headerNavli"><a className = "homepage_headerNavlink" href="/Portfolio">PORTFOLIO</a></li>
+                            <li class="homepage_headerNavli"><a className = "homepage_headerNavlink" href="/">HOME</a></li>
                         </ul>
                     </nav>
                 </header>
