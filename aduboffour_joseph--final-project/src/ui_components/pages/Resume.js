@@ -9,7 +9,7 @@ function Resume ()
         </head>
         <body class="resume_bodybckg">
                 <header class="homepage_header">
-                <a href="homepage.html" class="homepage_headerlogo">JOEYZ<span style={{color: 'rgb(92, 222, 240)'}}>WORLD.</span></a>
+                <a href="/" class="homepage_headerlogo">JOEYZ<span style={{color:'rgb(92, 222, 240)'}}>WORLD.</span></a>
                 <nav>
                         <ul class="homepage_headerNav">
                             <li class="homepage_headerNavli"><a className= "homepage_headerNavlink" href="/ContactPage">CONNECT</a></li>
@@ -65,7 +65,7 @@ function Resume ()
                  </div>
             </section>
 
-            <a class="resumepage_bodylinks" href="portfolioPage.html">Explore Work</a>
+            <a class="resumepage_bodylinks" href="/Portfolio">Explore Work</a>
         </body>
 
 
