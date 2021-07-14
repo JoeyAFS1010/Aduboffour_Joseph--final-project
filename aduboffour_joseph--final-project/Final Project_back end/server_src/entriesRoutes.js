@@ -6,7 +6,7 @@ import jwtVerify from './jwtVerify.js'
 import * as dBase from './dataHandler.js'
 const router = express.Router();
 let entries = []
-let reqEntryProperties = ["name", "email", "phoneNumber", "content"]
+let reqEntryProperties = ["name", "email", "subject", "content"]
 
 
 
@@ -33,9 +33,9 @@ const entryValidationMiddleware = (req, res, next) =>
         let schema = yup.object().shape(
             {
                 name: yup.string().required(),
-                email: yup.string().email('email format is Invalid'),
-                phoneNumber: yup.number().required().positive().integer(),
-                content: yup.string()
+                email: yup.string().required().email('email format is Invalid'),
+                subject: yup.string().required(),
+                content: yup.string().required()
             })
         
         try 
@@ -76,12 +76,14 @@ const entryValidationMiddleware = (req, res, next) =>
 router.post('/contact_form/entries', entryValidationMiddleware, async (req, res, next) => 
 {
     const id = uuidv4()
-    const {name, email} = req.body
+    const {name, email, subject, content} = req.body
     const newEntry = 
     {
         id,
         name,
-        email
+        email,
+        subject,
+        content
     }
     try 
     {
