@@ -390,6 +390,12 @@
     outline: none;
 }
 
+.contact_form_submit:hover
+{
+    background-color:rgb(92, 222, 240);
+    color: white;
+}
+
 
 
 /* CSS FOR RESUMEPAGE*/
